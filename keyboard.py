@@ -10,7 +10,7 @@ import pyaudio
 import os
 from PIL import Image, ImageTk
 
-db = "./../list.db"
+db = "./list.db"
 
 conn = sqlite3.connect(db)
 
@@ -97,7 +97,7 @@ def audio():
 
 
 
-    WAV_FILE = "./../wav_voice/output.wav"
+    WAV_FILE = "./wav_voice/output.wav"
     
     """
     デバイス上でのオーディオ系の機器情報を表示する
@@ -177,7 +177,7 @@ def audio():
     
     r = sr.Recognizer()
 
-    audio_file = "./../wav_voice/output.wav"
+    audio_file = "./wav_voice/output.wav"
 
     with sr.AudioFile(audio_file) as source:
         audio = r.record(source)
@@ -194,7 +194,7 @@ def audio():
     except sr.RequestError as e:
         print("request")
 
-    os.remove("./../wav_voice/output.wav")
+    os.remove("./wav_voice/output.wav")
     
     
     
