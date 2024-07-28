@@ -1,0 +1,2 @@
+build/keyboard/keyboard.pkg filter=lfs diff=lfs merge=lfs -text
+dist/keyboard.exe filter=lfs diff=lfs merge=lfs -text
